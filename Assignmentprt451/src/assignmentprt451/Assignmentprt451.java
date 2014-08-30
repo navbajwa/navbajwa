@@ -58,26 +58,32 @@ public class Assignmentprt451
         {  
                 sec = t[i];  
         }
-        else if (sec == maximum){  
+        else if (sec == maximum)
+        {  
                 sec= t[i];  
-            }  
+            } 
+        
         } 
-          
+        //System.out.println("second highest is=="+sec);
+          int flag=1;
   
             for (int i=0; i<t.length; i++) 
     {
         
         if(t[i]==sec)
         {
-             if((i>0)||(i>t.length-1))
+           flag++;
+           if((flag>=3))
             {
                 a=a+",";
             }
-           
             a=a+"{"+z[i]+","+t[i]+"}";
-           
+          
+             
           
         }
+       
+        
         
         
     

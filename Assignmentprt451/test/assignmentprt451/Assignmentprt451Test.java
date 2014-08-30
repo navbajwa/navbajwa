@@ -30,8 +30,8 @@ public class Assignmentprt451Test {
     public void testFrequencycount() 
     {
      
-        String s = "h,a,z,c,h,d,W,W,h,W,h,W,M,M,M,M";
-        String expected="{{h,4},{W,4},{M,4}}";
+        String s = "h,a,z,c,d,W,W,h,W,h,W,M,M,M,M,f,k,k,k,k,i,u";
+        String expected="{{W,4},{M,4},{k,4}}";
        String result=Assignmentprt451.frequencycount(s);
         assertEquals(expected,result);
         
